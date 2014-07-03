@@ -1,0 +1,5 @@
+D:\Projects\Projects_all\Projects1\Pluton\Extensions\bin\Release\Extensions.dll
+D:\Projects\Projects_all\Projects1\Pluton\Extensions\bin\Release\Extensions.pdb
+D:\Projects\Projects_all\Projects1\Pluton\Extensions\obj\Release\Extensions.csprojResolveAssemblyReference.cache
+D:\Projects\Projects_all\Projects1\Pluton\Extensions\obj\Release\Extensions.dll
+D:\Projects\Projects_all\Projects1\Pluton\Extensions\obj\Release\Extensions.pdb
