@@ -22,6 +22,31 @@ namespace Extensions.Maybe
         }
 
         /// <summary>
+        /// Возвращает результат выполнения операции, в случае ошибки возвращает null.
+        /// </summary>
+        /// <typeparam name="TInput">Тип вхорного параметра.</typeparam>
+        /// <typeparam name="TResult">Тип результата выполнения операции.</typeparam>
+        /// <param name="o">Входной параметр.</param>
+        /// <param name="evaluator">Опереация преобразования входного параметра в результат.</param>
+        /// <returns></returns>
+        public static TResult SafeWith<TInput, TResult>
+            (this TInput o, Func<TInput, TResult> evaluator)
+            where TInput : class
+            where TResult : class
+        {
+            if (o == null)
+                return null;
+            try
+            {
+                return evaluator(o);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
         /// Возвращает результат выполнения операции.
         /// </summary>
         /// <typeparam name="TInput">Тип вхорного параметра.</typeparam>

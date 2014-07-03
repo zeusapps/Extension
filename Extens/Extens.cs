@@ -48,6 +48,7 @@ namespace Extensions.Extens
             return list;
         }
 
+        
         /// <summary>
         /// Преобразует последовательность байт в НЕХ-строку.
         /// </summary>
